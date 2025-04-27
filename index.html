@@ -2,86 +2,166 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Tuna del Valle</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #F9FFF3;
+            color: #33691E;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Encabezado */
+        .header {
+            background-color: #D0F0C0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header font {
+            display: block;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .main-container .left, .main-container .center, .main-container .right {
+            padding: 10px;
+        }
+
+        /* Logo y producto */
+        .left, .right {
+            flex: 1 1 20%;
+            text-align: center;
+        }
+
+        .center {
+            flex: 1 1 60%;
+            background-color: #E5F9D8;
+            border: 5px solid #AED581;
+            padding: 20px;
+        }
+
+        .center table {
+            width: 100%;
+        }
+
+        .center table td {
+            text-align: center;
+        }
+
+        .menu {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #F9FFF3;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu td {
+            background-color: #DCEDC8;
+            border: 2px solid #33691E;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .menu a {
+            color: #33691E;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        /* Estilos del pie de página */
+        .footer {
+            background-color: #D0F0C0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Media Query para dispositivos móviles */
+        @media (max-width: 768px) {
+            .left, .center, .right {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .header font {
+                font-size: 24px;
+            }
+
+            .menu td {
+                font-size: 16px;
+            }
+
+            .menu a {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
-<body bgcolor="#F9FFF3" text="#33691E" link="#33691E" alink="#76FF03" vlink="#558B2F">
+<body>
 
     <!-- Encabezado principal -->
-    <table width="100%" bgcolor="#D0F0C0" cellpadding="20" cellspacing="0" border="0">
-        <tr>
-            <td align="center">
-                <font size="8">🌵 <b>Tuna del Valle</b> 🌵</font><br>
-                <font size="5"><i>"Frescura Natural de Nuestro Desierto"</i></font>
-            </td>
-        </tr>
-    </table>
+    <div class="header">
+        <font size="8">🌵 <b>Tuna del Valle</b> 🌵</font><br>
+        <font size="5"><i>"Frescura Natural de Nuestro Desierto"</i></font>
+    </div>
 
     <br><br>
 
     <!-- Estructura principal con logo a la izquierda y producto a la derecha -->
-    <table width="100%" cellpadding="10">
-        <tr>
-            <!-- Logo a la izquierda -->
-            <td width="20%" align="center" valign="top">
-              <br>
-              <br>
-              <br>
+    <div class="main-container">
+        <!-- Logo a la izquierda -->
+        <div class="left">
+            <img src="logo.jpg" alt="Logo Tuna del Valle" width="250">
+        </div>
 
-                <img src="logo.jpg" alt="Logo Tuna del Valle" width="250">
-            </td>
+        <!-- Menú en el centro -->
+        <div class="center">
+            <table>
+                <tr>
+                    <td>
+                        <font size="6" color="#33691E">📚 Menú Principal</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Opciones de navegación -->
+                        <table class="menu">
+                            <tr>
+                                <td><a href="producto.html">🍃 Ver Producto</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="descripcion.html">📜 Acerca del Producto</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="contacto.html">📞 Contacto</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-            <!-- Menú en el centro -->
-            <td width="60%" align="center" valign="top">
-                <table width="100%" cellpadding="20" cellspacing="0" bgcolor="#E5F9D8" border="5" bordercolor="#AED581">
-                    <tr>
-                        <td align="center">
-                            <font size="6" color="#33691E">📚 Menú Principal</font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center">
-                            <!-- Opciones de navegación -->
-                            <table width="80%" align="center" cellpadding="15" cellspacing="10" bgcolor="#F9FFF3">
-                                <tr>
-                                    <td align="center" bgcolor="#DCEDC8" border="2">
-                                        <a href="producto.html"><font size="5">🍃 Ver Producto</font></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" bgcolor="#DCEDC8" border="2">
-                                        <a href="descripcion.html"><font size="5">📜 Acerca del Producto</font></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" bgcolor="#DCEDC8" border="2">
-                                        <a href="contacto.html"><font size="5">📞 Contacto</font></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-
-            <!-- Imagen del producto a la derecha -->
-            <td width="20%" align="center" valign="top">
-              <br>
-
-                <img src="producto.jpg" alt="Tuna fresca" width="215">
-            </td>
-        </tr>
-    </table>
+        <!-- Imagen del producto a la derecha -->
+        <div class="right">
+            <img src="producto.jpg" alt="Tuna fresca" width="215">
+        </div>
+    </div>
 
     <br><br>
 
     <!-- Pie de página -->
-    <table width="100%" bgcolor="#D0F0C0" cellpadding="15" cellspacing="0">
-        <tr>
-            <td align="center">
-                <font size="2">© 2025 Tuna del Valle | Jose Angel Arteaga Martin</font>
-            </td>
-        </tr>
-    </table>
+    <div class="footer">
+        <font size="2">© 2025 Tuna del Valle | Jose Angel Arteaga Martin</font>
+    </div>
 
 </body>
 </html>

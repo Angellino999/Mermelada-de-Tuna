@@ -3,81 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto - Tuna del Valle</title>
+    <style>
+        body {
+            background-color: #F1F8E9;
+            color: #33691E;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, h2 {
+            color: #1B5E20;
+        }
+        h3 {
+            color: #2E7D32;
+        }
+        table {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #A5D6A7;
+            padding: 20px;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header-title {
+            text-align: center;
+        }
+        .header-title font {
+            color: #1B5E20;
+        }
+        .content {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border: 2px solid #A5D6A7;
+        }
+        .contact-info {
+            padding: 10px 0;
+        }
+        .contact-info td {
+            padding: 10px;
+        }
+        .back-button {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            color: #33691E;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: #A5D6A7;
+            text-align: center;
+            padding: 15px;
+        }
+        .footer font {
+            font-size: 12px;
+        }
+    </style>
 </head>
 
-<body bgcolor="#F1F8E9" text="#33691E">
+<body>
 
-<!-- Encabezado con logo a la izquierda y título y eslogan centrados en el rectángulo -->
-<table width="100%" bgcolor="#A5D6A7" cellpadding="20">
-    <tr>
-        <!-- Logo a la izquierda -->
-        <td width="15%" align="left">
-            <img src="logo.jpg" alt="Logo Tuna del Valle" width="100">
-        </td>
-
-        <!-- Espacio vacío para que el título y eslogan se centren en el rectángulo -->
-        <td align="center" colspan="3">
-            <font size="7" face="Arial, Helvetica, sans-serif" color="#1B5E20"><b>Tuna del Valle</b></font><br>
-            <font size="4" face="Arial, Helvetica, sans-serif" color="#2E7D32"><i>"Frescura Natural de Nuestro Desierto"</i></font>
-        </td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
-
-<br>
+<!-- Encabezado con logo y título -->
+<div class="header">
+    <table width="100%">
+        <tr>
+            <td width="15%" align="left">
+                <img src="logo.jpg" alt="Logo Tuna del Valle">
+            </td>
+            <td class="header-title" colspan="3">
+                <font size="7"><b>Tuna del Valle</b></font><br>
+                <font size="4"><i>"Frescura Natural de Nuestro Desierto"</i></font>
+            </td>
+        </tr>
+    </table>
+</div>
 
 <!-- Sección principal -->
-<table width="70%" align="center" bgcolor="#FFFFFF" cellpadding="30" border="2" bordercolor="#A5D6A7">
-    <tr>
-        <td align="center">
+<div class="content">
+    <h1>Contacto</h1>
+    <hr width="50%" color="#A5D6A7">
+    
+    <table class="contact-info">
+        <tr>
+            <td align="right"><b>📞 Teléfono:</b></td>
+            <td align="left">772-151-5390</td>
+        </tr>
+        <tr>
+            <td align="right"><b>📧 Correo:</b></td>
+            <td align="left">tunadelvalle@gmail.com</td>
+        </tr>
+        <tr>
+            <td align="right"><b>📍 Ubicación:</b></td>
+            <td align="left">Valle del Mezquital, Hidalgo, México</td>
+        </tr>
+    </table>
 
-            <font size="6" face="Arial, Helvetica, sans-serif" color="#33691E"><b>Contacto</b></font>
-            <hr color="#A5D6A7" width="50%">
+    <p align="center">
+        <font size="4">¡Contáctanos para hacer tu pedido o solicitar más información!</font>
+    </p>
 
-            <table cellpadding="10" cellspacing="10">
-                <tr>
-                    <td align="right"><b>📞 Teléfono:</b></td>
-                    <td align="left">772-151-5390</td>
-                </tr>
-                <tr>
-                    <td align="right"><b>📧 Correo:</b></td>
-                    <td align="left">tunadelvalle@gmail.com</td>
-                </tr>
-                <tr>
-                    <td align="right"><b>📍 Ubicación:</b></td>
-                    <td align="left">Valle del Mezquital, Hidalgo, México</td>
-                </tr>
-            </table>
-
-            <br>
-
-            <font size="4" face="Arial, Helvetica, sans-serif" color="#1B5E20">
-                ¡Contáctanos para hacer tu pedido o solicitar más información!
-            </font>
-
-            <br><br>
-
-            <a href="index.html">
-                <font size="4" color="#33691E">⬅️ Volver al Índice</font>
-            </a>
-
-        </td>
-    </tr>
-</table>
-
-<br><br>
+    <p align="center">
+        <a href="index.html" class="back-button">⬅️ Volver al Índice</a>
+    </p>
+</div>
 
 <!-- Pie de página -->
-<table width="100%" bgcolor="#A5D6A7" cellpadding="15">
-    <tr>
-        <td align="center">
-            <font size="2">
-                © 2025 Tuna del Valle - Jose Angel Arteaga Martin
-            </font>
-        </td>
-    </tr>
-</table>
+<div class="footer">
+    <font>© 2025 Tuna del Valle - Jose Angel Arteaga Martin</font>
+</div>
 
 </body>
 </html>

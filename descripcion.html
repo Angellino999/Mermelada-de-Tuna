@@ -4,42 +4,56 @@
     <meta charset="UTF-8">
     <title>Acerca del Producto - Tuna del Valle</title>
     <style>
+        /* Estilos generales */
         body {
             background-color: #F1F8E9;
             color: #33691E;
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #1B5E20;
         }
         h2, h3 {
-            color: #2E7D32;
-        }
-        hr {
-            border-color: #A5D6A7;
+            font-size: 24px;
         }
         table {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
+            border-collapse: collapse;
         }
-        .header, .footer {
+        .header {
             background-color: #A5D6A7;
             padding: 30px;
         }
-        .header h1, .header h2 {
+        .header-title {
+            text-align: center;
+        }
+        .header-title font {
             color: #1B5E20;
         }
-        .product-description {
+        .content {
             background-color: #FFFFFF;
             padding: 20px;
             border: 2px solid #A5D6A7;
         }
-        .benefits-table, .form-table {
-            background-color: #E8F5E9;
-            padding: 10px;
-            border: 1px solid #C8E6C9;
+        .content p, .content ol, .content ul {
+            font-size: 16px;
+            line-height: 1.5;
         }
-        .back-button a {
+        .content img {
+            width: 100%;
+            max-width: 450px;
+            border: 3px solid #A5D6A7;
+        }
+        .back-button {
+            display: block;
+            text-align: center;
             font-size: 16px;
             color: #1B5E20;
             text-decoration: none;
+            margin-top: 20px;
         }
         .footer {
             background-color: #D0F0C0;
@@ -49,6 +63,43 @@
         .footer font {
             font-size: 12px;
         }
+
+        /* Media Queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            .header-title font {
+                font-size: 28px;
+            }
+            h2, h3 {
+                font-size: 20px;
+            }
+            .content {
+                padding: 15px;
+            }
+            .content p, .content ol, .content ul {
+                font-size: 14px;
+            }
+            .back-button {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title font {
+                font-size: 24px;
+            }
+            h2, h3 {
+                font-size: 18px;
+            }
+            .content {
+                padding: 10px;
+            }
+            .content p, .content ol, .content ul {
+                font-size: 12px;
+            }
+            .back-button {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 
@@ -56,33 +107,37 @@
 
 <!-- Encabezado -->
 <div class="header">
-    <h1>Tuna del Valle</h1>
-    <h2>"Frescura Natural de Nuestro Desierto"</h2>
+    <table width="100%">
+        <tr>
+            <td align="center">
+                <font size="8" face="Arial, Helvetica, sans-serif" color="#1B5E20"><b>Tuna del Valle</b></font><br>
+                <font size="5" face="Arial, Helvetica, sans-serif" color="#2E7D32"><i>"Frescura Natural de Nuestro Desierto"</i></font>
+            </td>
+        </tr>
+    </table>
 </div>
 
 <!-- Sección principal -->
-<div class="product-description">
-
-    <hr width="80%">
+<div class="content">
     <h2 align="center">Acerca del Producto</h2>
-    <hr width="80%">
-    
+    <hr color="#A5D6A7" width="80%">
+
     <p align="justify">
         Nuestra mermelada de tuna proviene del fértil <b>Valle del Mezquital</b>, una región donde la sabiduría ancestral y el amor por la tierra nos brindan frutas de la mejor calidad.
     </p>
-    
+
     <p align="justify">
         Las tunas son recolectadas cuidadosamente entre <b>julio y septiembre</b>, aprovechando el clima semidesértico que intensifica su dulzura natural y su aroma fresco.
     </p>
 
-    <hr width="60%">
+    <hr color="#A5D6A7" width="60%">
     <h3 align="center">¿Cómo elaboramos nuestra mermelada?</h3>
-    <hr width="60%">
-    
+    <hr color="#A5D6A7" width="60%">
+
     <p align="justify">
         Cada frasco es el resultado de un proceso artesanal, donde la calidad y la tradición se respetan en cada paso:
     </p>
-    
+
     <ol>
         <li><b>Recolección:</b> Seleccionamos las tunas más maduras y jugosas a mano, usando herramientas tradicionales.</li>
         <li><b>Selección y limpieza:</b> Las frutas se lavan con agua purificada para eliminar polvo y espinas.</li>
@@ -94,43 +149,33 @@
     </ol>
 
     <!-- Imagen de la mermelada -->
-    <table>
+    <table width="100%" align="center">
         <tr>
             <td align="center">
-                <img src="mermelada3.jpg" width="450" alt="Mermelada de tuna artesanal" border="3" style="border-color:#A5D6A7;">
+                <img src="mermelada3.jpg" alt="Mermelada de tuna artesanal">
             </td>
         </tr>
     </table>
 
-    <hr width="60%">
+    <hr color="#A5D6A7" width="60%">
     <h3 align="center">Beneficios para tu salud</h3>
-    <hr width="60%">
+    <hr color="#A5D6A7" width="60%">
 
     <p align="justify">
         Además de ser deliciosa, nuestra mermelada de tuna es una fuente rica en nutrientes esenciales:
     </p>
 
-    <table class="benefits-table">
-        <tr>
-            <td>✅ Antioxidantes naturales que protegen tus células</td>
-        </tr>
-        <tr>
-            <td>✅ Fibra alimentaria que favorece la digestión</td>
-        </tr>
-        <tr>
-            <td>✅ Vitaminas C y E para fortalecer el sistema inmune</td>
-        </tr>
-        <tr>
-            <td>✅ Minerales como calcio, magnesio y potasio</td>
-        </tr>
-        <tr>
-            <td>✅ Libre de conservadores y colorantes artificiales</td>
-        </tr>
+    <table width="90%" align="center" bgcolor="#E8F5E9" cellpadding="10" border="1" bordercolor="#C8E6C9">
+        <tr><td>✅ Antioxidantes naturales que protegen tus células</td></tr>
+        <tr><td>✅ Fibra alimentaria que favorece la digestión</td></tr>
+        <tr><td>✅ Vitaminas C y E para fortalecer el sistema inmune</td></tr>
+        <tr><td>✅ Minerales como calcio, magnesio y potasio</td></tr>
+        <tr><td>✅ Libre de conservadores y colorantes artificiales</td></tr>
     </table>
 
-    <hr width="60%">
+    <hr color="#A5D6A7" width="60%">
     <h3 align="center">Ideas para disfrutarla</h3>
-    <hr width="60%">
+    <hr color="#A5D6A7" width="60%">
 
     <p align="justify">
         Puedes disfrutar nuestra mermelada de tuna acompañando:
@@ -144,10 +189,9 @@
     </ul>
 
     <!-- Botón de regreso -->
-    <div class="back-button" align="center">
-        <a href="index.html">⬅️ Volver al Índice</a>
-    </div>
-
+    <p align="center">
+        <a href="index.html" class="back-button">⬅️ Volver al Índice</a>
+    </p>
 </div>
 
 <!-- Pie de página -->
